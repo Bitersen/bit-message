@@ -1,0 +1,25 @@
+{
+  "name": "bit-message-box",
+  "version": "1.0.0",
+  "description": "Boxed console messages for NodeJS terminal",
+  "main": "src/index.js",
+  "devDependencies": {
+    "boxen": "^4.1.0",
+    "chalk": "^2.4.2"
+  },
+  "keywords": [
+    "console",
+    "message",
+    "terminal"
+  ],
+  "homepage": "https://github.com/Bitersen/bit-message-box#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bitersen/bit-message-box.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bitersen/bit-message-box/issues"
+  },
+  "author": "Vladimir Jovanović <vladimir@bitersen.com>",
+  "license": "MIT"
+}
