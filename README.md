@@ -15,17 +15,18 @@ npm install --save-dev bit-message-box
 Add it to your script:
 
 ```js
-const msg = require("bit-message-box");
+const msg = require('bit-message-box')
 ```
 
 ## Methods
 
-| Name    | Result                                 |
-| ------- | -------------------------------------- |
-| `log`   | Returns white text with green border   |
-| `info`  | Returns blue text with blue border     |
-| `warn`  | Returns yellow text with yellow border |
-| `error` | Returns red text with red border       |
+| Name     | Result                                       |
+| -------- | -------------------------------------------- |
+| `log`    | Returns white text with green border         |
+| `info`   | Returns blue text with blue border           |
+| `warn`   | Returns yellow text with yellow border       |
+| `error`  | Returns red text with red border             |
+| `assert` | Displays message if the condition is `false` |
 
 ## Example
 
@@ -33,7 +34,15 @@ const msg = require("bit-message-box");
 msg.info('This is just an info message')
 ```
 
-![Info message](./static/info.png)
+```js
+let myCondition = 1 > 2
+
+msg.assert(myCondition, 'Message is displayed if the condition is false')
+```
+
+![Info message](./static/msg-examples.png)
+
 
 ## Author
-Vladimir Jovanović | [LinkedIn](https://www.linkedin.com/in/vladimir79/) | [Twitter - @bitersen](https://twitter.com/bitersen)
+
+Vladimir Jovanović | [Personal website](https://webdizajn.org) | [LinkedIn](https://www.linkedin.com/in/-v-j-/)
